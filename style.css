@@ -1,0 +1,75 @@
+/* Se ha añadido un poco de margen al cuerpo para evitar que el contenido toque los bordes de la ventana del navegador */
+body {
+  font-family: Calibri, sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  transition: background-color 0.3s ease;
+}
+
+/* Se ha añadido un poco de margen superior e inferior para dar más espacio alrededor del contenedor */
+.contenedor {
+  width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  text-align: center;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  border-radius: 20px;
+}
+
+.contenedor:hover {
+  transform: scale(1.05);
+}
+
+/* Se ha cambiado el color del texto a un gris oscuro para una mejor legibilidad */
+h1 {
+  color: #2d2d2d;
+  animation: color-change 2s infinite;
+}
+
+@keyframes color-change {
+  0% { color: #2d2d2d; }
+  50% { color: #4CAF50; }
+  100% { color: #2d2d2d; }
+}
+
+/* Se ha añadido un borde y se ha cambiado el tamaño de la fuente para mejorar la legibilidad */
+input[type="text"] {
+  padding: 10px;
+  font-size: 18px;
+  width: 70%;
+  border: 1px solid #ccc;
+  transition: border-color 0.3s ease;
+  margin-bottom: 20px;
+}
+
+input[type="text"]:focus {
+  border-color: #4CAF50;
+}
+
+/* Se ha añadido un efecto de hover para dar feedback al usuario cuando pasa el ratón por encima del botón */
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #4c6baf;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+/* Se ha aumentado el tamaño de la fuente para mejorar la legibilidad */
+#datosClima {
+  margin-top: 20px;
+  font-size: 20px;
+  color: #2d2d2d;
+}
